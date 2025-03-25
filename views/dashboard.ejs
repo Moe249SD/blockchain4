@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>لوحة تحكم المستخدم</h1>
+        <nav>
+            <a href="/">الرئيسية</a>
+            <a href="/logout">تسجيل الخروج</a>
+        </nav>
+    </header>
+    <section>
+        <h2>مرحبًا، <%= user ? user.username : "ضيف" %></h2>
+        <p>يمكنك إدارة مستندات التأمين هنا.</p>
+        
+        <h3>رفع مستند تأميني</h3>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <button type="submit">رفع</button>
+            <a href="/files" class="btn">عرض المستندات</a>
+        </form>
+
+        <h3>الاتصال بمحفظة MetaMask</h3>
+        <button id="connectMetaMask" class="btn">اتصل بـ MetaMask</button>
+
+        <div class="wallet-info">
+            <p>📌 <strong>حالة المحفظة:</strong> <span id="walletStatus">غير متصل</span></p>
+        </div>
+
+    </section>
+    
+    <script src="/script.js"></script>
+</body>
+</html>

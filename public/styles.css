@@ -1,0 +1,122 @@
+/* استيراد خط جميل */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+/* تحسين التصميم العام */
+body {
+    font-family: 'Tajawal', sans-serif;
+    text-align: center;
+    background-color: #eef2f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* تصميم الهيدر */
+header {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* تحسين شكل القسم */
+section {
+    background: white;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* تحسين العناوين */
+h2 {
+    color: #007bff;
+    font-weight: bold;
+}
+
+h3 {
+    color: #333;
+    font-size: 20px;
+}
+
+/* تصميم الأزرار */
+.btn, button {
+    background: #007bff;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover, button:hover {
+    background: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* تحسين شكل زر MetaMask */
+#connectWallet {
+    display: block;
+    margin: 20px auto;
+    font-size: 18px;
+    background: #f6851b;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#connectWallet:hover {
+    background: #e2761b;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* تحسين إدخال الملفات */
+input[type="file"] {
+    border: 2px dashed #007bff;
+    padding: 10px;
+    width: 100%;
+    max-width: 250px;
+    margin: 15px auto;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+input[type="file"]:hover {
+    border-color: #0056b3;
+}
